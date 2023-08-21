@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-flex">
+                <h4>Hello Qudus</h4>
+                <img src="/static/images/avater2.jpg" alt="">
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-flex">
+                    <div class="balance">
+                        <h3>NGN 200000</h3>
+                    </div>
+                    <img src="/static/images/undraw_transfer_money_re_6o1h.svg" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="loan-button">
+            <button onclick="window.location.href='/pages/applyLoan.html';">Apply for loan</button>
+        </div>
+
+        <div class="table-container">
+            <h4>Loan history</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Amount</th>
+                        <th>Interest</th>
+                        <th>Duration</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="S/N">1</td>
+                        <td data-label="Amount">#550.00</td>
+                        <td data-label="Interest">5%</td>
+                        <td data-label="Duration">5 month</td>
+                    </tr>
+                    <tr>
+                        <td data-label="S/N">2</td>
+                        <td data-label="Amount">#1050.00</td>
+                        <td data-label="Interest">24%</td>
+                        <td data-label="Duration">6 month</td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    
+</body>
+</html>

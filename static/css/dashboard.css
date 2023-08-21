@@ -1,0 +1,88 @@
+.header{
+    height: 130px;
+    background-color: darkblue;
+}
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px;
+    
+}
+.header-flex img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.header-flex h4{
+    color: white;
+    font-size: large;
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 25px;
+    padding-right:25px ;
+    margin-top: -35px;
+}
+.card{
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(42, 42, 151);
+    border-radius: 20px;
+}
+.card-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+.card-flex img{
+    width: 100px;
+}
+.card-flex h3{
+    color: white;
+}
+.loan-button{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 25px;
+    padding-right:25px ;
+    
+}
+.loan-button button{
+    width: auto;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.table-container h4{
+   margin-left: 10px;
+   font-size: 20px;
+   margin-top: 15px;
+   margin-bottom: 5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+

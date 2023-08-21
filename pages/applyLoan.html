@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Loan</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/applyLoan.css">
+    <script src="/static/js/ApplyLoan.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form" class="form">
+            <h2>Appy for Loan </h2>
+            <div class="form-control">
+              <label for="amount">Amount</label>
+              <input type="text" id="amount" placeholder="Enter Amount" />
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="payType">Pay back type</label>
+                <select id="payType">
+                    <option value="">Please Select</option>
+                    <option value="3">Monthly</option>
+                    <option value="7">yearly</option>
+                </select>
+              </div>
+            
+              <div class="form-control">
+                <label for="duration">Duration</label>
+                <select id="duration" placeholder="Enter last name">
+                    <option value="">Please Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+              </div>
+              <div class="loan_summary" id="loan_summary">
+                
+                
+              </div>
+              <!-- <input id="inputField" value="0122" type="text">
+              <div id="output"></div> -->
+    
+        
+            <button type="button" onclick="submitForm()">Continue</button>
+          </form>
+        <!-- <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            This is an alert notification.
+        </div> -->
+    </div>
+
+    
+</body>
+</html>

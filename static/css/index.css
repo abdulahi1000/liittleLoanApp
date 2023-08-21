@@ -1,0 +1,129 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #87CEEB;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.container{
+    width: 400px;
+    min-height: 100vh;
+    background-color: #fff;
+}
+.inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: red;
+}
+/* .flex_items{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    justify-content: space-between;
+    
+} */
+
+#desc{
+    font-size: 50px;
+    text-align: center;
+    color: darkblue;
+    
+}
+.flex_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+button{
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color:darkblue ;
+    color: white;
+    width: 150px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    
+}
+.form {
+    padding: 30px 40px;
+  }
+  
+  .form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .form-control label {
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .form-control select {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .form-control select:focus {
+    outline: 0;
+    border-color: #777;
+  }
+  
+  .form-control input:focus {
+    outline: 0;
+    border-color: #777;
+  }
+  
+  .form-control.success input {
+    border-color: var(--success-color);
+  }
+  
+  .form-control.error input {
+    border-color: var(--error-color);
+  }
+  
+  .form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+  }
+  
+  .form-control.error small {
+    visibility: visible;
+  }
+  
+  .form button {
+    cursor: pointer;
+    background-color: darkblue;
+    border: 2px solid darkblue;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+  }
+
