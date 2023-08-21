@@ -9,15 +9,16 @@ document.addEventListener("DOMContentLoaded", function() {
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
         const password2 = document.getElementById("password2").value;
+        const existingUsers = JSON.parse(localStorage.getItem("userList")) || [];
 
         const formData = {
             firstName: firstName,
             lastName: lastName,
             email: email,
             password: password,
+            id: existingUsers.length+1
         };
 
-        const existingUsers = JSON.parse(localStorage.getItem("userList")) || [];
         existingUsers.push(formData);
         localStorage.setItem("userList", JSON.stringify(existingUsers));
 

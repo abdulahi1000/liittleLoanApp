@@ -10,13 +10,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
         for (let index = 0; index < existingUsers.length; index++) {
             const element = existingUsers[index];
-            if(element.email == email && element.password == password){
+            if(element.email === email && element.password === password){
                 localStorage.setItem("LoginUser", JSON.stringify(element));
                 window.location.href = "/pages/dashboard.html"
 
             }else{
                 alert("Email/password is not correct")
             }
+            break;
             
         }
 
