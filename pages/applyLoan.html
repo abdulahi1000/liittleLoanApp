@@ -18,16 +18,16 @@
             <img src="/static/images/avater2.jpg" alt="">
         </div>
     </header>
-        <form id="form" class="form">
+        <form id="loanForm" class="form">
             <h2>Appy for Loan </h2>
             <div class="form-control">
               <label for="amount">Amount</label>
-              <input type="text" id="amount" placeholder="Enter Amount" />
+              <input type="text" required id="amount" placeholder="Enter Amount" />
               <small>Error message</small>
             </div>
             <div class="form-control">
                 <label for="payType">Pay back type</label>
-                <select id="payType">
+                <select id="payType" required>
                     <option value="">Please Select</option>
                     <option value="3">Monthly</option>
                     <option value="7">yearly</option>
@@ -36,7 +36,7 @@
             
               <div class="form-control">
                 <label for="duration">Duration</label>
-                <select id="duration" placeholder="Enter last name">
+                <select id="duration" required placeholder="Enter last name">
                     <option value="">Please Select</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -60,6 +60,7 @@
               <div id="output"></div> -->
     
         
+            <!-- <button type="submit" >Continue</button> -->
             <button type="button" onclick="window.location.href='/pages/confirmLoan.html';">Continue</button>
           </form>
         <!-- <div class="alert">

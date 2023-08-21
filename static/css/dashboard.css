@@ -48,6 +48,8 @@
    font-size: 20px;
    margin-top: 15px;
    margin-bottom: 5px;
+   overflow: auto; /* Add horizontal scrolling */
+    max-width: 100%;
 }
 table {
     width: 100%;

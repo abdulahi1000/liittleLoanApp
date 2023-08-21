@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var greet = document.getElementById("greet")
     greet.innerHTML= `Dear, ${loginUser.firstName}`
 
-    var loanData = JSON.parse(localStorage.getItem("user_loan"))
+    var loanData = JSON.parse(localStorage.getItem("last_loan"))
     console.log("loan data", loanData.amount)
     var p1Data = document.getElementsByTagName("p")
     p1Data[0].innerHTML = `You're applying for NGN ${loanData.amount} `

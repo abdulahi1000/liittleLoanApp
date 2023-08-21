@@ -36,6 +36,7 @@ function calculateInterest(amount,pay_type, duration){
 
 
 document.addEventListener("DOMContentLoaded", function() {
+    
     const amount = document.getElementById("amount");
     const payType = document.getElementById("payType");
     const duration = document.getElementById("duration");
@@ -63,19 +64,27 @@ document.addEventListener("DOMContentLoaded", function() {
         if (newAmount && newpayType && newduration){
             var interest = calculateInterest(newAmount,newpayType,newduration)
             var payback = calculateInterest(newAmount,newpayType,newduration)+Number(newAmount)
+            const existingUsersLoan = JSON.parse(localStorage.getItem("user_loan")) || [];
+            const loginUser = JSON.parse(localStorage.getItem("LoginUser")) || {};
 
             const formData = {
                 amount: newAmount,
                 payType: newpayType,
                 duration: newduration,
                 interest: interest,
-                payback:payback
+                payback:payback,
+                id: existingUsersLoan.length+1,
+                user: loginUser.id
             };
             
             var summary = document.getElementById("loan_summary")
             summary.innerHTML= `The total interest is NGN ${interest} and you'll be 
             paying back ${payback}`
-            localStorage.setItem("user_loan", JSON.stringify(formData))
+            localStorage.setItem("last_loan", JSON.stringify(formData))
+            
+
+            existingUsersLoan.push(formData);
+            localStorage.setItem("user_loan", JSON.stringify(existingUsersLoan));
             
     
         }
