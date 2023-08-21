@@ -50,27 +50,40 @@ document.addEventListener("DOMContentLoaded", function() {
     duration.addEventListener("input", updateOutput);
 
     console.log("outside", newAmount)
-    const formData = {
-        amount: newAmount,
-        payType: newpayType,
-        duration: newduration,
-    };
+    
 
     function updateOutput() {
         const newAmount = amount.value;
         const newpayType = payType.value;
         const newduration = duration.value;
 
+       
+        
+
         if (newAmount && newpayType && newduration){
+            var interest = calculateInterest(newAmount,newpayType,newduration)
+            var payback = calculateInterest(newAmount,newpayType,newduration)+Number(newAmount)
+
+            const formData = {
+                amount: newAmount,
+                payType: newpayType,
+                duration: newduration,
+                interest: interest,
+                payback:payback
+            };
+            
             var summary = document.getElementById("loan_summary")
-            summary.innerHTML= `The total interest is NGN ${calculateInterest(newAmount,newpayType,newduration)} and you'll be 
-            paying back ${calculateInterest(newAmount,newpayType,newduration)+Number(newAmount)}`
+            summary.innerHTML= `The total interest is NGN ${interest} and you'll be 
+            paying back ${payback}`
+            localStorage.setItem("user_loan", JSON.stringify(formData))
+            
     
         }
+        
        
     }
 
-    console.log(formData)
+    // console.log(formData)
     if (newAmount && newpayType && newduration){
         var summary = document.getElementById("loan_summary")
         summary.innerHTML= `The total interest is NGN ${calculateInterest(amount,payType,duration)} and you'll be 

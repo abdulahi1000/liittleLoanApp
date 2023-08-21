@@ -1,0 +1,28 @@
+.confirm_container{
+    padding: 10px;
+    background-color: rgb(42, 42, 151);
+    margin: 20px;
+    border-radius: 20px;
+    color: #D0CEEF;
+}
+.confirm_container img{
+    width: 200px;
+    padding: 20px;
+    margin-left: 30px;
+    
+
+}
+.confirm_container h4{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+
+}
+.confirm_container p{
+    font-size: 20px;
+
+}
+.confirm_container Button{
+    margin-right: 20px;
+
+}
